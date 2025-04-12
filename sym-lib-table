@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "business-card-rescue")(type "Legacy")(uri "${KIPRJMOD}/HDW_BUSINESS_CARD-rescue.lib")(options "")(descr ""))
+  (lib (name "business card-rescue")(type "KiCad")(uri "${KIPRJMOD}/business card-rescue.kicad_sym")(options "")(descr ""))
+)

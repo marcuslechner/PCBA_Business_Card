@@ -23,6 +23,10 @@ This project was inspired by several innovative creators in the hardware and mak
 
 - KiCad (PCB Design Suite)
 - Custom scripts and design assets (coming soon)
-- https://www.translatorscafe.com/unit-converter/sq/calculator/planar-coil-inductance/
-- https://www.circuits.dk/calculator_planar_coil_inductor.htm
 
+## 📏 Useful Calculators
+
+These tools were used to calculate antenna inductance for the inscribed hexagon coil:
+
+- [Planar Coil Inductance Calculator – TranslatorsCafe](https://www.translatorscafe.com/unit-converter/sq/calculator/planar-coil-inductance/)
+- [Planar Coil Inductance Calculator – Circuits.dk](https://www.circuits.dk/calculator_planar_coil_inductor.htm)

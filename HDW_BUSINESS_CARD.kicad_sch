@@ -779,10 +779,22 @@
 		)
 	)
 	(junction
+		(at 129.54 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "00a5a85d-13a2-4578-9411-50a359cb6076")
+	)
+	(junction
 		(at 156.21 106.68)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3980a3c5-3d46-438c-b4d8-ea4ff8f2bd4d")
+	)
+	(junction
+		(at 156.21 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6c938bff-f2fa-4ed7-9dec-e9445428db42")
 	)
 	(junction
 		(at 129.54 120.65)
@@ -808,16 +820,6 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 88.9) (xy 160.02 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "142d50e8-3401-4ba3-8451-0a2f0cdabb32")
-	)
-	(wire
-		(pts
 			(xy 160.02 120.65) (xy 160.02 106.68)
 		)
 		(stroke
@@ -825,6 +827,26 @@
 			(type default)
 		)
 		(uuid "21309d91-6a95-4369-9878-6b8f8116a0d1")
+	)
+	(wire
+		(pts
+			(xy 147.32 66.04) (xy 156.21 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2bd4003f-10ea-4271-9874-40be768b070c")
+	)
+	(wire
+		(pts
+			(xy 129.54 66.04) (xy 129.54 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2be06dd4-7224-48bf-875a-b92a4dd8ddd4")
 	)
 	(wire
 		(pts
@@ -858,6 +880,16 @@
 	)
 	(wire
 		(pts
+			(xy 156.21 81.28) (xy 156.21 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65e22000-9262-4d0c-8558-31f5ddbd7232")
+	)
+	(wire
+		(pts
 			(xy 129.54 120.65) (xy 138.43 120.65)
 		)
 		(stroke
@@ -865,6 +897,16 @@
 			(type default)
 		)
 		(uuid "6782c043-e6b9-4aea-906f-14967bf2ff0e")
+	)
+	(wire
+		(pts
+			(xy 156.21 99.06) (xy 153.67 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74bc3977-5ef3-402c-9a12-81394e8cfcf9")
 	)
 	(wire
 		(pts
@@ -898,6 +940,36 @@
 	)
 	(wire
 		(pts
+			(xy 129.54 66.04) (xy 139.7 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "955126ae-c691-4042-85a8-2ec4909d250c")
+	)
+	(wire
+		(pts
+			(xy 149.86 81.28) (xy 156.21 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c8d6807-778c-4600-931d-fb21c2975438")
+	)
+	(wire
+		(pts
+			(xy 156.21 66.04) (xy 156.21 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a75351ca-54cf-48e6-b3d2-5d50cbaf9c39")
+	)
+	(wire
+		(pts
 			(xy 144.78 130.81) (xy 140.97 130.81)
 		)
 		(stroke
@@ -918,23 +990,13 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 99.06) (xy 153.67 99.06)
+			(xy 129.54 81.28) (xy 137.16 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ae8b1241-82a0-4aa0-a179-334967e304cb")
-	)
-	(wire
-		(pts
-			(xy 129.54 88.9) (xy 160.02 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b7b425e0-4751-4b7a-bab6-047aade1192a")
+		(uuid "af7e0f63-2c72-49f3-aa3e-c347b60e60bd")
 	)
 	(wire
 		(pts
@@ -968,7 +1030,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 99.06) (xy 129.54 88.9)
+			(xy 129.54 99.06) (xy 129.54 81.28)
 		)
 		(stroke
 			(width 0)
@@ -985,6 +1047,25 @@
 			(type default)
 		)
 		(uuid "f43e1074-3519-444c-b9c2-cc3760e4d671")
+	)
+	(text_box "NT3H1101 parallel capacitance is 50pF\n\nIgnoring antenna capacitance, to get a \nresonant frequency of 13.56MHz, we need \nan inductance of 2.77518uH"
+		(exclude_from_sim no)
+		(at 44.45 27.94 0)
+		(size 44.45 16.51)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "df5d4f36-14e1-4c42-baf1-cf00738533b3")
 	)
 	(symbol
 		(lib_id "business card-rescue:CAP-pspice")
@@ -1208,7 +1289,7 @@
 				)
 			)
 		)
-		(property "Value" "NT3H1101_NT3H1201"
+		(property "Value" "NT3H1101"
 			(at 144.78 93.98 0)
 			(effects
 				(font
@@ -1278,7 +1359,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 160.02 95.25 0)
+		(at 143.51 66.04 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1286,7 +1367,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005db27cdd")
 		(property "Reference" "L1"
-			(at 161.3408 94.0816 0)
+			(at 142.3416 64.7192 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1294,8 +1375,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.75uH"
-			(at 161.3408 96.393 0)
+		(property "Value" "1.64uH"
+			(at 144.653 64.7192 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1304,7 +1385,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 160.02 95.25 0)
+			(at 143.51 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1313,7 +1394,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 160.02 95.25 0)
+			(at 143.51 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1321,13 +1402,12 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 160.02 95.25 0)
+		(property "Description" "Antenna"
+			(at 144.018 67.564 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -1340,6 +1420,74 @@
 			(project ""
 				(path "/4902e220-27e2-4a10-86d3-f5ff54ae57f8"
 					(reference "L1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "business card-rescue:CAP-pspice")
+		(at 143.51 81.28 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2952ea4b-5808-4a48-8d3f-ddca9931b774")
+		(property "Reference" "C2"
+			(at 146.05 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "440nF"
+			(at 146.05 86.36 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+			(at 143.51 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 143.51 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Tunig Capacitor"
+			(at 143.51 75.946 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "00b1bd9e-663c-47df-afd1-8fb640ac8b6b")
+		)
+		(pin "2"
+			(uuid "043c4407-402f-4b40-ad73-c2004dce2bbf")
+		)
+		(instances
+			(project "HDW_BUSINESS_CARD"
+				(path "/4902e220-27e2-4a10-86d3-f5ff54ae57f8"
+					(reference "C2")
 					(unit 1)
 				)
 			)

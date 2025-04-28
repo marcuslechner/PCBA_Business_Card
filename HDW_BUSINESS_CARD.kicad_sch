@@ -1085,7 +1085,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "440nF"
+		(property "Value" "220nF"
 			(at 147.32 125.73 90)
 			(effects
 				(font
@@ -1094,7 +1094,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 144.78 120.65 0)
 			(effects
 				(font
@@ -1163,7 +1163,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 148.59 129.032 90)
 			(effects
 				(font
@@ -1230,7 +1230,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
 			(at 137.16 130.81 0)
 			(effects
 				(font
@@ -1249,6 +1249,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 137.16 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG_PART_NUMBER" "150080RS75000"
 			(at 137.16 130.81 0)
 			(effects
 				(font
@@ -1324,6 +1333,24 @@
 				(hide yes)
 			)
 		)
+		(property "MFG_PART" "NT3H1101"
+			(at 144.78 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG_PART_NUMBER" "NT3H1101"
+			(at 144.78 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "5"
 			(uuid "e3089fe3-3194-49a0-a03d-e34ab0d5a10f")
 		)
@@ -1364,7 +1391,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005db27cdd")
 		(property "Reference" "L1"
 			(at 142.3416 64.7192 0)
@@ -1375,7 +1402,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1.64uH"
+		(property "Value" "2.78uH"
 			(at 144.653 64.7192 0)
 			(effects
 				(font
@@ -1432,7 +1459,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "2952ea4b-5808-4a48-8d3f-ddca9931b774")
 		(property "Reference" "C2"
 			(at 146.05 83.82 90)
@@ -1452,7 +1479,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
 			(at 143.51 81.28 0)
 			(effects
 				(font

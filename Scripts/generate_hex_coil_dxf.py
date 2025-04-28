@@ -8,7 +8,7 @@ def generate_hexagon_nfc_coil_dxf(
     inner_diameter_mm=25.2,
     trace_width_mm=0.3,
     trace_thickness_mm=0.035,
-    spacing_mm=0.3,
+    spacing_mm=0.2,
     num_turns=7,
     
 ):
@@ -41,16 +41,39 @@ def generate_hexagon_nfc_coil_dxf(
 
     all_coordinates = []
 
+    r_current = r_outer
+    section = 0
+
     # Draw each turn
     for turn in range(num_turns):
-        r_current = r_outer - (turn * delta_r)
+
         points = []
-        for angle_deg in angles_deg:
+        for idx, angle_deg in enumerate(angles_deg):
             angle_rad = math.radians(angle_deg)
-            x = r_current * math.cos(angle_rad)
-            y = r_current * math.sin(angle_rad)
+
+            r_previous = r_current
+            r_current = r_current - (delta_r/6)
+            section = section + 1
+            print(f"section: {section}, difference: {r_current - r_previous}")
+            # print(r_current - delta_r/6*idx)
+            x = (r_current) * math.cos(angle_rad)
+            y = (r_current) * math.sin(angle_rad)
             points.append((x, y))
-        points.append(points[0])  # Close the loop
+            
+
+        # points.append(points[0])  # Close the loop
+        # r_previous = r_current
+        r_current = r_current - delta_r/6
+        print(f" 6 - current: {r_current}, difference: {r_current - r_previous}")
+        # r_current = r_outer - (turn - 1 * delta_r)
+        angle_rad = math.radians(0)
+        # print(f"Index: {idx}, Angle: {0}")
+        print(r_current)
+        x = (r_current) * math.cos(angle_rad)
+        y = (r_current) * math.sin(angle_rad)
+        points.append((x, y))
+
+
         
         # Save coordinates
         all_coordinates.append(points)
@@ -130,8 +153,8 @@ def calculate_coil_resistance(trace_width_mm, trace_thickness_mm, resistivity_co
     return resistance
 
 # Visualize coil with matplotlib
-# coordinates = generate_hexagon_nfc_coil_dxf()
-# plot_hexagon_nfc_coil(coordinates)
+coordinates = generate_hexagon_nfc_coil_dxf()
+plot_hexagon_nfc_coil(coordinates)
 
 # Example Usage
-generate_hexagon_nfc_coil_dxf()
+# generate_hexagon_nfc_coil_dxf()

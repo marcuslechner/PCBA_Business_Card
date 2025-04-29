@@ -8,8 +8,9 @@ def generate_hexagon_nfc_coil_dxf(
     inner_diameter_mm=25.2,
     trace_width_mm=0.3,
     trace_thickness_mm=0.035,
-    spacing_mm=0.2,
+    spacing_mm=0.3,
     num_turns=7,
+    style = 1,
     
 ):
  
@@ -18,7 +19,7 @@ def generate_hexagon_nfc_coil_dxf(
     # - https://www.translatorscafe.com/unit-converter/sq/calculator/planar-coil-inductance/
     # - https://www.circuits.dk/calculator_planar_coil_inductor.htm
 
-    filename = f"hexagon_nfc_coil_OD{outer_diameter_mm}_TW{trace_width_mm}_SP{spacing_mm}_NT{num_turns}.dxf"
+    filename = f"hexagon_nfc_coil_OD{outer_diameter_mm}_TW{trace_width_mm}_SP{spacing_mm}_NT{num_turns}_ST{style}.dxf"
     # filename="hexagon_nfc_coil.dxf" 
     script_dir = os.path.dirname(os.path.abspath(__file__))
 
@@ -33,53 +34,69 @@ def generate_hexagon_nfc_coil_dxf(
     # conversion from inscribed dimension to circumscribed
     outer_diameter_mm = outer_diameter_mm / math.cos(math.radians(30))
 
+    # accomodate for first turn shrinkage in style 0:
+    if(style == 0):
+        outer_diameter_mm = outer_diameter_mm + trace_width_mm + spacing_mm
+
     # Constants
     delta_r = trace_width_mm / math.cos(math.radians(30)) + spacing_mm / math.cos(math.radians(30))  # How much to shrink per turn
     r_outer = (outer_diameter_mm - (trace_width_mm / math.cos(math.radians(30))))/2 # Outer radius
 
-    angles_deg = [0, 60, 120, 180, 240, 300]  # Hexagon angles
+    # angles_deg = [0, 60, 120, 180, 240, 300, 0, 60, 120, 180, 240, 300, 0, 60, 120, 180, 240, 300, 0, 60, 120, 180, 240, 300, 0, 60, 120, 180, 240, 300, 0, 60, 120, 180, 240, 300, 0, 60, 120, 180, 240, 300]  # Hexagon angles
+    angles_deg = [0, 60, 120, 180, 240, 300] #0, 60, 120, 180, 240, 300, 0, 60, 120, 180, 240, 300, 0, 60, 120, 180, 240, 300, 0, 60, 120, 180, 240, 300, 0, 60, 120, 180, 240, 300, 0, 60, 120, 180, 240, 300]  # Hexagon angles
 
     all_coordinates = []
 
     r_current = r_outer
     section = 0
+    points = []
 
     # Draw each turn
     for turn in range(num_turns):
 
-        points = []
+        
         for idx, angle_deg in enumerate(angles_deg):
             angle_rad = math.radians(angle_deg)
 
             r_previous = r_current
-            r_current = r_current - (delta_r/6)
-            section = section + 1
-            print(f"section: {section}, difference: {r_current - r_previous}")
+            # decrease diameter every section
+            if(style == 0):
+                r_current = r_current - (delta_r/6)
+            # section = section + 1
+            # print(f"section: {section}, difference: {r_current - r_previous}")
             # print(r_current - delta_r/6*idx)
             x = (r_current) * math.cos(angle_rad)
             y = (r_current) * math.sin(angle_rad)
             points.append((x, y))
             
 
-        # points.append(points[0])  # Close the loop
+        # decrease diameter every turn
+        if(style == 1):
+            r_current = r_current - delta_r
+
+                # points.append(points[0])  # Close the loop
         # r_previous = r_current
-        r_current = r_current - delta_r/6
-        print(f" 6 - current: {r_current}, difference: {r_current - r_previous}")
-        # r_current = r_outer - (turn - 1 * delta_r)
-        angle_rad = math.radians(0)
-        # print(f"Index: {idx}, Angle: {0}")
-        print(r_current)
-        x = (r_current) * math.cos(angle_rad)
-        y = (r_current) * math.sin(angle_rad)
-        points.append((x, y))
+        # print(f" 6 - current: {r_current}, difference: {r_current - r_previous}")
+        # # r_current = r_outer - (turn - 1 * delta_r)
+
+
+    if(style == 0):
+        r_current = r_current - (delta_r/6)
+
+    #add last point    
+    angle_rad = math.radians(0)
+    x = (r_current) * math.cos(angle_rad)
+    y = (r_current) * math.sin(angle_rad)
+    points.append((x, y))
+
 
 
         
-        # Save coordinates
-        all_coordinates.append(points)
-        
-        # Draw polyline
-        msp.add_lwpolyline(points, close=True)
+    # Save coordinates
+    all_coordinates.append(points)
+    
+    # Draw polyline
+    msp.add_lwpolyline(points, close=False)
 
     #save DXF file
     doc.saveas(full_path)
@@ -143,9 +160,10 @@ def calculate_coil_resistance(trace_width_mm, trace_thickness_mm, resistivity_co
             x2, y2 = turn_coordinates[i + 1]
             segment_length = math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)  # Euclidean distance
             total_length_m += segment_length
-
+    print(f"Total length in mm: {total_length_m}")
     # Convert dimensions from mm to meters
     total_length_m = total_length_m /1000
+    
 
     # print(total_length_m)
     # Calculate the resistance using R = ρ * L / A

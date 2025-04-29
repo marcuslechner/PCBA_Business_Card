@@ -452,6 +452,227 @@
 				)
 			)
 		)
+		(symbol "NT3H2111W0FHKH:NT3H2111W0FHKH"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -7.6233 10.6725 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Value" "NT3H2111W0FHKH"
+				(at -7.6248 -12.708 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left bottom)
+				)
+			)
+			(property "Footprint" "NT3H2111W0FHKH:QFN8P50_160X160X50L40X20N"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "MANUFACTURER" "NXP Semiconductors"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "NT3H2111W0FHKH_0_0"
+				(rectangle
+					(start -7.62 -10.16)
+					(end 7.62 10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 2.54 180)
+					(length 5.08)
+					(name "LA"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 12.7 -7.62 180)
+					(length 5.08)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input clock
+					(at -12.7 2.54 0)
+					(length 5.08)
+					(name "SCL"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -12.7 7.62 0)
+					(length 5.08)
+					(name "FD"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -12.7 0 0)
+					(length 5.08)
+					(name "SDA"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 12.7 7.62 180)
+					(length 5.08)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 12.7 -5.08 180)
+					(length 5.08)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at 12.7 0 180)
+					(length 5.08)
+					(name "LB"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "business card-rescue:CAP-pspice"
 			(pin_names
 				(offset 0.254)
@@ -567,260 +788,72 @@
 				)
 			)
 		)
-		(symbol "business card-rescue:NT3H1101_NT3H1201-MCU_NXP_NT3H11"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U?"
-				(at 0 13.97 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "MCU_NXP_NT3H11_NT3H1101_NT3H1201"
-				(at 0 11.43 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "NT3H1101_NT3H1201-MCU_NXP_NT3H11_0_1"
-				(rectangle
-					(start -6.35 8.89)
-					(end 6.35 -7.62)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "NT3H1101_NT3H1201-MCU_NXP_NT3H11_1_1"
-				(pin input line
-					(at -8.89 6.35 0)
-					(length 2.54)
-					(name "LA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at -8.89 2.54 0)
-					(length 2.54)
-					(name "VSS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive clock
-					(at -8.89 -1.27 0)
-					(length 2.54)
-					(name "SCL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -8.89 -5.08 0)
-					(length 2.54)
-					(name "FD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 8.89 -5.08 180)
-					(length 2.54)
-					(name "SDA"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 8.89 -1.27 180)
-					(length 2.54)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 8.89 2.54 180)
-					(length 2.54)
-					(name "Vout"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 8.89 6.35 180)
-					(length 2.54)
-					(name "LB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 	)
 	(junction
-		(at 129.54 81.28)
+		(at 220.98 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "00a5a85d-13a2-4578-9411-50a359cb6076")
 	)
 	(junction
-		(at 156.21 106.68)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3980a3c5-3d46-438c-b4d8-ea4ff8f2bd4d")
-	)
-	(junction
-		(at 156.21 81.28)
+		(at 220.98 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6c938bff-f2fa-4ed7-9dec-e9445428db42")
 	)
 	(junction
-		(at 129.54 120.65)
+		(at 193.04 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "af66d151-fe62-422c-af6c-7eaba339f1e5")
+	)
+	(junction
+		(at 166.37 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bbdced59-120a-4a16-a257-cedc47ff9070")
 	)
 	(junction
-		(at 160.02 120.65)
+		(at 193.04 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d3b91d0f-78e4-4c89-9023-c4dd37dca06d")
+		(uuid "f4f99f54-0f55-4dbe-9ff6-55ab928a98b6")
+	)
+	(no_connect
+		(at 165.1 99.06)
+		(uuid "869d81ab-f9f7-4074-82de-39d163e29df0")
+	)
+	(no_connect
+		(at 165.1 104.14)
+		(uuid "9b840029-00eb-40e9-8530-a860c8c11762")
+	)
+	(no_connect
+		(at 165.1 106.68)
+		(uuid "a77895d2-9b74-4461-849e-f3023ff2cb95")
 	)
 	(wire
 		(pts
-			(xy 160.02 106.68) (xy 156.21 106.68)
+			(xy 190.5 106.68) (xy 203.2 106.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "00c45850-f78f-4d4d-ae4d-4a7566a9b61c")
+		(uuid "0d6d72c0-8cd9-4f97-8da7-c73a28503a6f")
 	)
 	(wire
 		(pts
-			(xy 160.02 120.65) (xy 160.02 106.68)
+			(xy 193.04 114.3) (xy 190.5 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15521e56-67d9-4dfc-9a27-1ffd2590a36f")
+	)
+	(wire
+		(pts
+			(xy 193.04 129.54) (xy 193.04 114.3)
 		)
 		(stroke
 			(width 0)
@@ -830,7 +863,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 66.04) (xy 156.21 66.04)
+			(xy 236.22 109.22) (xy 236.22 118.11)
 		)
 		(stroke
 			(width 0)
@@ -840,7 +873,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 66.04) (xy 129.54 81.28)
+			(xy 236.22 91.44) (xy 220.98 91.44)
 		)
 		(stroke
 			(width 0)
@@ -850,7 +883,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 130.81) (xy 129.54 130.81)
+			(xy 170.18 139.7) (xy 166.37 139.7)
 		)
 		(stroke
 			(width 0)
@@ -860,27 +893,17 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 102.87) (xy 129.54 102.87)
+			(xy 190.5 99.06) (xy 193.04 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "46bde3bc-c988-4de1-ac77-f88c21bca78b")
+		(uuid "39417141-2369-4b81-9687-1de33cb38a94")
 	)
 	(wire
 		(pts
-			(xy 153.67 106.68) (xy 156.21 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "63549b48-179e-4893-a09e-bd00c1e87494")
-	)
-	(wire
-		(pts
-			(xy 156.21 81.28) (xy 156.21 99.06)
+			(xy 220.98 118.11) (xy 203.2 118.11)
 		)
 		(stroke
 			(width 0)
@@ -890,7 +913,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 120.65) (xy 138.43 120.65)
+			(xy 166.37 129.54) (xy 175.26 129.54)
 		)
 		(stroke
 			(width 0)
@@ -900,7 +923,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 99.06) (xy 153.67 99.06)
+			(xy 203.2 106.68) (xy 203.2 118.11)
 		)
 		(stroke
 			(width 0)
@@ -910,7 +933,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 130.81) (xy 129.54 120.65)
+			(xy 166.37 139.7) (xy 166.37 129.54)
 		)
 		(stroke
 			(width 0)
@@ -920,7 +943,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 130.81) (xy 160.02 120.65)
+			(xy 193.04 139.7) (xy 193.04 129.54)
 		)
 		(stroke
 			(width 0)
@@ -930,7 +953,7 @@
 	)
 	(wire
 		(pts
-			(xy 135.89 99.06) (xy 129.54 99.06)
+			(xy 203.2 91.44) (xy 203.2 104.14)
 		)
 		(stroke
 			(width 0)
@@ -940,7 +963,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 66.04) (xy 139.7 66.04)
+			(xy 236.22 91.44) (xy 236.22 101.6)
 		)
 		(stroke
 			(width 0)
@@ -950,7 +973,7 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 81.28) (xy 156.21 81.28)
+			(xy 220.98 111.76) (xy 220.98 118.11)
 		)
 		(stroke
 			(width 0)
@@ -960,7 +983,17 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 66.04) (xy 156.21 81.28)
+			(xy 193.04 90.17) (xy 161.29 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6f3319b-8b9e-47b7-a4d8-c9d7e7a9d730")
+	)
+	(wire
+		(pts
+			(xy 236.22 118.11) (xy 220.98 118.11)
 		)
 		(stroke
 			(width 0)
@@ -970,7 +1003,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 130.81) (xy 140.97 130.81)
+			(xy 181.61 139.7) (xy 177.8 139.7)
 		)
 		(stroke
 			(width 0)
@@ -980,7 +1013,7 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 102.87) (xy 153.67 102.87)
+			(xy 193.04 111.76) (xy 190.5 111.76)
 		)
 		(stroke
 			(width 0)
@@ -990,7 +1023,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 81.28) (xy 137.16 81.28)
+			(xy 220.98 91.44) (xy 220.98 99.06)
 		)
 		(stroke
 			(width 0)
@@ -1000,7 +1033,27 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 120.65) (xy 160.02 120.65)
+			(xy 161.29 90.17) (xy 161.29 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7a9906e-77c6-42f4-a076-8f98f22ea19c")
+	)
+	(wire
+		(pts
+			(xy 190.5 104.14) (xy 203.2 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9a734c1-3e5f-454b-b9d8-54d61e20b023")
+	)
+	(wire
+		(pts
+			(xy 187.96 129.54) (xy 193.04 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1010,7 +1063,17 @@
 	)
 	(wire
 		(pts
-			(xy 156.21 106.68) (xy 156.21 102.87)
+			(xy 193.04 99.06) (xy 193.04 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cac930e6-ac5a-48f4-b461-8f381fc48205")
+	)
+	(wire
+		(pts
+			(xy 193.04 114.3) (xy 193.04 111.76)
 		)
 		(stroke
 			(width 0)
@@ -1020,7 +1083,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 130.81) (xy 160.02 130.81)
+			(xy 189.23 139.7) (xy 193.04 139.7)
 		)
 		(stroke
 			(width 0)
@@ -1030,7 +1093,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 99.06) (xy 129.54 81.28)
+			(xy 203.2 91.44) (xy 220.98 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1040,13 +1103,23 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 102.87) (xy 129.54 120.65)
+			(xy 166.37 111.76) (xy 166.37 129.54)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "f43e1074-3519-444c-b9c2-cc3760e4d671")
+	)
+	(wire
+		(pts
+			(xy 161.29 111.76) (xy 166.37 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc883db7-0d1c-490f-90c8-89be231b1ac2")
 	)
 	(text_box "NT3H1101 parallel capacitance is 50pF\n\nIgnoring antenna capacitance, to get a \nresonant frequency of 13.56MHz, we need \nan inductance of 2.77518uH"
 		(exclude_from_sim no)
@@ -1069,7 +1142,7 @@
 	)
 	(symbol
 		(lib_id "business card-rescue:CAP-pspice")
-		(at 144.78 120.65 270)
+		(at 181.61 129.54 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1077,7 +1150,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005d4b2984")
 		(property "Reference" "C1"
-			(at 147.32 123.19 90)
+			(at 184.15 132.08 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1086,7 +1159,7 @@
 			)
 		)
 		(property "Value" "220nF"
-			(at 147.32 125.73 90)
+			(at 184.15 134.62 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1095,7 +1168,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 144.78 120.65 0)
+			(at 181.61 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1104,7 +1177,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 144.78 120.65 0)
+			(at 181.61 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1113,7 +1186,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 144.78 120.65 0)
+			(at 181.61 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1138,7 +1211,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 148.59 130.81 270)
+		(at 185.42 139.7 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1146,7 +1219,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005d4b4999")
 		(property "Reference" "R1"
-			(at 149.86 133.35 90)
+			(at 186.69 142.24 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1155,7 +1228,7 @@
 			)
 		)
 		(property "Value" "47ohm"
-			(at 149.86 135.89 90)
+			(at 186.69 144.78 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1164,7 +1237,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 148.59 129.032 90)
+			(at 185.42 137.922 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1173,7 +1246,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 148.59 130.81 0)
+			(at 185.42 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1182,7 +1255,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 148.59 130.81 0)
+			(at 185.42 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1207,7 +1280,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 137.16 130.81 0)
+		(at 173.99 139.7 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1215,7 +1288,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005d9f60e5")
 		(property "Reference" "D1"
-			(at 138.43 133.35 0)
+			(at 175.26 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1223,7 +1296,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 138.43 135.89 0)
+			(at 175.26 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1231,7 +1304,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_0805_2012Metric"
-			(at 137.16 130.81 0)
+			(at 173.99 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1240,7 +1313,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 137.16 130.81 0)
+			(at 173.99 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1249,7 +1322,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 137.16 130.81 0)
+			(at 173.99 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1258,7 +1331,7 @@
 			)
 		)
 		(property "MFG_PART_NUMBER" "150080RS75000"
-			(at 137.16 130.81 0)
+			(at 173.99 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1282,8 +1355,8 @@
 		)
 	)
 	(symbol
-		(lib_id "business card-rescue:NT3H1101_NT3H1201-MCU_NXP_NT3H11")
-		(at 144.78 105.41 0)
+		(lib_id "NT3H2111W0FHKH:NT3H2111W0FHKH")
+		(at 177.8 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1291,7 +1364,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005db22e9e")
 		(property "Reference" "U1"
-			(at 144.78 91.44 0)
+			(at 177.8 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1299,24 +1372,25 @@
 			)
 		)
 		(property "Value" "NT3H1101"
-			(at 144.78 93.98 0)
+			(at 177.8 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:TSSOP-8_4.4x3mm_P0.65mm"
-			(at 144.78 105.41 0)
+		(property "Footprint" "Lechnology Footprints Library:QFN8P50_160X160X50L40X20N"
+			(at 177.8 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify bottom)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/NXP%20PDFs/NT3H1101_NT3H1201_DS.pdf"
-			(at 144.78 105.41 0)
+			(at 177.8 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1325,7 +1399,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 144.78 105.41 0)
+			(at 177.8 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1334,7 +1408,7 @@
 			)
 		)
 		(property "MFG_PART" "NT3H1101"
-			(at 144.78 105.41 0)
+			(at 177.8 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1343,11 +1417,21 @@
 			)
 		)
 		(property "MFG_PART_NUMBER" "NT3H1101"
-			(at 144.78 105.41 0)
+			(at 177.8 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "NXP Semiconductors"
+			(at 177.8 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
 				(hide yes)
 			)
 		)
@@ -1386,7 +1470,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 143.51 66.04 90)
+		(at 236.22 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1394,7 +1478,7 @@
 		(dnp yes)
 		(uuid "00000000-0000-0000-0000-00005db27cdd")
 		(property "Reference" "L1"
-			(at 142.3416 64.7192 0)
+			(at 237.5408 104.2416 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1403,7 +1487,7 @@
 			)
 		)
 		(property "Value" "2.78uH"
-			(at 144.653 64.7192 0)
+			(at 237.5408 106.553 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1412,7 +1496,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 143.51 66.04 0)
+			(at 236.22 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1421,7 +1505,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 143.51 66.04 0)
+			(at 236.22 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1430,7 +1514,7 @@
 			)
 		)
 		(property "Description" "Antenna"
-			(at 144.018 67.564 90)
+			(at 234.696 105.918 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1454,7 +1538,7 @@
 	)
 	(symbol
 		(lib_id "business card-rescue:CAP-pspice")
-		(at 143.51 81.28 270)
+		(at 220.98 105.41 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1462,7 +1546,7 @@
 		(dnp yes)
 		(uuid "2952ea4b-5808-4a48-8d3f-ddca9931b774")
 		(property "Reference" "C2"
-			(at 146.05 83.82 90)
+			(at 218.44 107.95 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1471,7 +1555,7 @@
 			)
 		)
 		(property "Value" "440nF"
-			(at 146.05 86.36 90)
+			(at 215.9 107.95 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1480,7 +1564,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 143.51 81.28 0)
+			(at 220.98 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1489,7 +1573,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 143.51 81.28 0)
+			(at 220.98 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1498,7 +1582,7 @@
 			)
 		)
 		(property "Description" "Tunig Capacitor"
-			(at 143.51 75.946 90)
+			(at 226.314 105.41 90)
 			(effects
 				(font
 					(size 1.27 1.27)

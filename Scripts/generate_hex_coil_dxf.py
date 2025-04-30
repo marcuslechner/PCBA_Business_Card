@@ -10,6 +10,7 @@ def generate_hexagon_nfc_coil_dxf(
     trace_thickness_mm=0.035,
     spacing_mm=0.3,
     num_turns=7,
+    num_sides = 6,
     style = 1,
     
 ):
@@ -42,7 +43,10 @@ def generate_hexagon_nfc_coil_dxf(
     delta_r = trace_width_mm / math.cos(math.radians(30)) + spacing_mm / math.cos(math.radians(30))  # How much to shrink per turn
     r_outer = (outer_diameter_mm - (trace_width_mm / math.cos(math.radians(30))))/2 # Outer radius
 
-    # angles_deg = [0, 60, 120, 180, 240, 300, 0, 60, 120, 180, 240, 300, 0, 60, 120, 180, 240, 300, 0, 60, 120, 180, 240, 300, 0, 60, 120, 180, 240, 300, 0, 60, 120, 180, 240, 300, 0, 60, 120, 180, 240, 300]  # Hexagon angles
+    angles_deg = []
+    angle_per_section = 360 / num_sides
+    for side in range(num_sides):
+        angles_deg.append(angle_per_section * side)
     angles_deg = [0, 60, 120, 180, 240, 300] #0, 60, 120, 180, 240, 300, 0, 60, 120, 180, 240, 300, 0, 60, 120, 180, 240, 300, 0, 60, 120, 180, 240, 300, 0, 60, 120, 180, 240, 300, 0, 60, 120, 180, 240, 300]  # Hexagon angles
 
     all_coordinates = []
@@ -89,6 +93,7 @@ def generate_hexagon_nfc_coil_dxf(
     y = (r_current) * math.sin(angle_rad)
     points.append((x, y))
 
+    # print(f"Inner Diameter: {x*2 - trace_width_mm}")
 
 
         

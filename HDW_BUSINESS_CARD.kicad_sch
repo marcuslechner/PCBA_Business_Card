@@ -796,28 +796,28 @@
 		(uuid "00a5a85d-13a2-4578-9411-50a359cb6076")
 	)
 	(junction
+		(at 193.04 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2b899f33-cc7f-4195-ac7c-0f0544392184")
+	)
+	(junction
+		(at 161.29 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4f711df5-235b-4494-bdc4-f30c67c30c79")
+	)
+	(junction
+		(at 193.04 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6bfa3874-5ceb-4453-987d-7c2986918f43")
+	)
+	(junction
 		(at 220.98 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6c938bff-f2fa-4ed7-9dec-e9445428db42")
-	)
-	(junction
-		(at 193.04 114.3)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "af66d151-fe62-422c-af6c-7eaba339f1e5")
-	)
-	(junction
-		(at 166.37 129.54)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bbdced59-120a-4a16-a257-cedc47ff9070")
-	)
-	(junction
-		(at 193.04 129.54)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f4f99f54-0f55-4dbe-9ff6-55ab928a98b6")
 	)
 	(no_connect
 		(at 165.1 99.06)
@@ -843,26 +843,6 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 114.3) (xy 190.5 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "15521e56-67d9-4dfc-9a27-1ffd2590a36f")
-	)
-	(wire
-		(pts
-			(xy 193.04 129.54) (xy 193.04 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "21309d91-6a95-4369-9878-6b8f8116a0d1")
-	)
-	(wire
-		(pts
 			(xy 236.22 109.22) (xy 236.22 118.11)
 		)
 		(stroke
@@ -883,7 +863,27 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 139.7) (xy 166.37 139.7)
+			(xy 190.5 114.3) (xy 190.5 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e656afb-8e43-439f-a4fd-8c08740d69b4")
+	)
+	(wire
+		(pts
+			(xy 193.04 111.76) (xy 193.04 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3066f1a5-1fd6-425e-9b8d-d6cf344766ab")
+	)
+	(wire
+		(pts
+			(xy 170.18 139.7) (xy 161.29 139.7)
 		)
 		(stroke
 			(width 0)
@@ -893,13 +893,23 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 99.06) (xy 193.04 99.06)
+			(xy 161.29 121.92) (xy 161.29 129.54)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "39417141-2369-4b81-9687-1de33cb38a94")
+		(uuid "42aef5a5-1bb6-4641-9aec-e215ab7f1a38")
+	)
+	(wire
+		(pts
+			(xy 193.04 99.06) (xy 193.04 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "431cac66-7ab2-4e72-81f0-f4ee74c709bc")
 	)
 	(wire
 		(pts
@@ -913,7 +923,17 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 129.54) (xy 175.26 129.54)
+			(xy 190.5 99.06) (xy 193.04 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66d07dab-e696-40cb-9004-9b2b3eb17b5c")
+	)
+	(wire
+		(pts
+			(xy 161.29 129.54) (xy 175.26 129.54)
 		)
 		(stroke
 			(width 0)
@@ -933,7 +953,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 139.7) (xy 166.37 129.54)
+			(xy 161.29 139.7) (xy 161.29 129.54)
 		)
 		(stroke
 			(width 0)
@@ -983,16 +1003,6 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 90.17) (xy 161.29 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a6f3319b-8b9e-47b7-a4d8-c9d7e7a9d730")
-	)
-	(wire
-		(pts
 			(xy 236.22 118.11) (xy 220.98 118.11)
 		)
 		(stroke
@@ -1013,16 +1023,6 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 111.76) (xy 190.5 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aa58dcb9-fa5c-41d6-a1cc-7bfe0c21e5d3")
-	)
-	(wire
-		(pts
 			(xy 220.98 91.44) (xy 220.98 99.06)
 		)
 		(stroke
@@ -1033,13 +1033,13 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 90.17) (xy 161.29 111.76)
+			(xy 190.5 121.92) (xy 161.29 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b7a9906e-77c6-42f4-a076-8f98f22ea19c")
+		(uuid "b0cb82c1-057e-4e05-b859-01b5109ccdaa")
 	)
 	(wire
 		(pts
@@ -1063,26 +1063,6 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 99.06) (xy 193.04 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cac930e6-ac5a-48f4-b461-8f381fc48205")
-	)
-	(wire
-		(pts
-			(xy 193.04 114.3) (xy 193.04 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e1afac70-3052-4218-96bb-3a7cc36c4eda")
-	)
-	(wire
-		(pts
 			(xy 189.23 139.7) (xy 193.04 139.7)
 		)
 		(stroke
@@ -1103,23 +1083,32 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 111.76) (xy 166.37 129.54)
+			(xy 190.5 111.76) (xy 193.04 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f43e1074-3519-444c-b9c2-cc3760e4d671")
+		(uuid "f818777a-81fe-49f8-82aa-902f0ab336f0")
 	)
-	(wire
-		(pts
-			(xy 161.29 111.76) (xy 166.37 111.76)
-		)
+	(text_box "Total coil resistance: 1.142585 Ohms\nTotal coil resistance: 2.774 uH  Ohms\nEstimated Coil Capacity: 2.0pF"
+		(exclude_from_sim no)
+		(at 231.14 123.19 0)
+		(size 45.72 12.7)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fc883db7-0d1c-490f-90c8-89be231b1ac2")
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "d85a671b-6eb7-4924-aece-c1abf7758c6c")
 	)
 	(text_box "NT3H1101 parallel capacitance is 50pF\n\nIgnoring antenna capacitance, to get a \nresonant frequency of 13.56MHz, we need \nan inductance of 2.77518uH"
 		(exclude_from_sim no)
@@ -1194,6 +1183,24 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C915854"
+			(at 181.61 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG_PART_NUMBER" "TCC0402X7R224K250AT"
+			(at 181.61 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a7b651e8-eebd-4d19-8fd6-56121aa23d0b")
 		)
@@ -1255,6 +1262,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 185.42 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C137973"
+			(at 185.42 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MFG_PART_NUMBER" "RC0402FR-0747RL"
 			(at 185.42 139.7 0)
 			(effects
 				(font
@@ -1339,6 +1364,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C19192157"
+			(at 173.99 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a31f137d-1bf9-4b1c-90b3-115597cf5c5e")
 		)
@@ -1407,7 +1441,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG_PART" "NT3H1101"
+		(property "MFG_PART" ""
 			(at 177.8 106.68 0)
 			(effects
 				(font
@@ -1416,7 +1450,7 @@
 				(hide yes)
 			)
 		)
-		(property "MFG_PART_NUMBER" "NT3H1101"
+		(property "MFG_PART_NUMBER" "NT3H2111W0 FHKH"
 			(at 177.8 106.68 0)
 			(effects
 				(font
@@ -1432,6 +1466,15 @@
 					(size 1.27 1.27)
 				)
 				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C73156"
+			(at 177.8 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)

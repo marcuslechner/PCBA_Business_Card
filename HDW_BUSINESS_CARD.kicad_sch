@@ -1,14 +1,18 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "4902e220-27e2-4a10-86d3-f5ff54ae57f8")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Device:L"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -75,32 +79,8 @@
 			)
 			(symbol "L_0_1"
 				(arc
-					(start 0 -2.54)
-					(mid 0.6323 -1.905)
-					(end 0 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -1.27)
-					(mid 0.6323 -0.635)
-					(end 0 0)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0)
-					(mid 0.6323 0.635)
+					(start 0 2.54)
+					(mid 0.6323 1.905)
 					(end 0 1.27)
 					(stroke
 						(width 0)
@@ -112,8 +92,32 @@
 				)
 				(arc
 					(start 0 1.27)
-					(mid 0.6323 1.905)
-					(end 0 2.54)
+					(mid 0.6323 0.635)
+					(end 0 0)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 0)
+					(mid 0.6323 -0.635)
+					(end 0 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 0 -1.27)
+					(mid 0.6323 -1.905)
+					(end 0 -2.54)
 					(stroke
 						(width 0)
 						(type default)
@@ -161,11 +165,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:LED"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -233,10 +242,22 @@
 			(symbol "LED_0_1"
 				(polyline
 					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27)
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -257,7 +278,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+						(xy -1.27 -1.27) (xy -1.27 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -269,22 +290,10 @@
 				)
 				(polyline
 					(pts
-						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
 					)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
-					)
-					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -330,9 +339,12 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -451,6 +463,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "NT3H2111W0FHKH:NT3H2111W0FHKH"
 			(pin_names
@@ -527,35 +540,17 @@
 						(type background)
 					)
 				)
-				(pin bidirectional line
-					(at 12.7 2.54 180)
+				(pin input line
+					(at -12.7 7.62 0)
 					(length 5.08)
-					(name "LA"
+					(name "FD"
 						(effects
 							(font
 								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 12.7 -7.62 180)
-					(length 5.08)
-					(name "VSS"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
+					(number "4"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -574,24 +569,6 @@
 						)
 					)
 					(number "3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -12.7 7.62 0)
-					(length 5.08)
-					(name "FD"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -635,17 +612,17 @@
 						)
 					)
 				)
-				(pin output line
-					(at 12.7 -5.08 180)
+				(pin bidirectional line
+					(at 12.7 2.54 180)
 					(length 5.08)
-					(name "VOUT"
+					(name "LA"
 						(effects
 							(font
 								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "7"
+					(number "1"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -671,7 +648,44 @@
 						)
 					)
 				)
+				(pin output line
+					(at 12.7 -5.08 180)
+					(length 5.08)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 12.7 -7.62 180)
+					(length 5.08)
+					(name "VSS"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "business card-rescue:CAP-pspice"
 			(pin_names
@@ -726,7 +740,7 @@
 			(symbol "CAP-pspice_0_1"
 				(polyline
 					(pts
-						(xy -3.81 -1.27) (xy 3.81 -1.27)
+						(xy -3.81 1.27) (xy 3.81 1.27)
 					)
 					(stroke
 						(width 0)
@@ -738,7 +752,7 @@
 				)
 				(polyline
 					(pts
-						(xy -3.81 1.27) (xy 3.81 1.27)
+						(xy -3.81 -1.27) (xy 3.81 -1.27)
 					)
 					(stroke
 						(width 0)
@@ -787,7 +801,60 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
+	)
+	(text "C2 is used to tune the first PCB Antenna iteration\nIt is excluded from board for production runs"
+		(exclude_from_sim no)
+		(at 222.25 87.122 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "50477f9e-629d-46a2-9643-c4a55ddf38db")
+	)
+	(text_box "Total coil resistance: 1.142585 Ohms\nTotal coil resistance: 2.774 uH  Ohms\nEstimated Coil Capacity: 2.0pF"
+		(exclude_from_sim no)
+		(at 231.14 123.19 0)
+		(size 45.72 12.7)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "d85a671b-6eb7-4924-aece-c1abf7758c6c")
+	)
+	(text_box "NT3H1101 parallel capacitance is 50pF\n\nIgnoring antenna capacitance, to get a \nresonant frequency of 13.56MHz, we need \nan inductance of 2.77518uH"
+		(exclude_from_sim no)
+		(at 44.45 27.94 0)
+		(size 44.45 16.51)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "df5d4f36-14e1-4c42-baf1-cf00738533b3")
 	)
 	(junction
 		(at 220.98 91.44)
@@ -1090,44 +1157,6 @@
 			(type default)
 		)
 		(uuid "f818777a-81fe-49f8-82aa-902f0ab336f0")
-	)
-	(text_box "Total coil resistance: 1.142585 Ohms\nTotal coil resistance: 2.774 uH  Ohms\nEstimated Coil Capacity: 2.0pF"
-		(exclude_from_sim no)
-		(at 231.14 123.19 0)
-		(size 45.72 12.7)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "d85a671b-6eb7-4924-aece-c1abf7758c6c")
-	)
-	(text_box "NT3H1101 parallel capacitance is 50pF\n\nIgnoring antenna capacitance, to get a \nresonant frequency of 13.56MHz, we need \nan inductance of 2.77518uH"
-		(exclude_from_sim no)
-		(at 44.45 27.94 0)
-		(size 44.45 16.51)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "df5d4f36-14e1-4c42-baf1-cf00738533b3")
 	)
 	(symbol
 		(lib_id "business card-rescue:CAP-pspice")
@@ -1585,7 +1614,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp yes)
 		(uuid "2952ea4b-5808-4a48-8d3f-ddca9931b774")
 		(property "Reference" "C2"
@@ -1652,4 +1681,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
